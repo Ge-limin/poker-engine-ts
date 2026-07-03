@@ -1,0 +1,1553 @@
+{
+  "id": "street-preflop-six-max",
+  "description": "Preflop baseline generated via headless random state runner (6 players, decision mode: uniform, steps: 4, seed: 1741282389). Captured on 2025-10-19T03:52:17.933Z.",
+  "origin": "headless-script",
+  "payload": {
+    "session": {
+      "id": "session-1",
+      "config": {
+        "tableVariant": "texas-holdem",
+        "bettingStructure": "no-limit",
+        "maxSeats": 6,
+        "startingStack": 100,
+        "blindSchedule": [
+          {
+            "level": 1,
+            "smallBlind": 1,
+            "bigBlind": 2
+          }
+        ],
+        "personaPolicy": {
+          "defaultStyle": "balanced"
+        },
+        "ruleSet": {
+          "streets": [
+            "preflop",
+            "flop",
+            "turn",
+            "river",
+            "showdown"
+          ],
+          "postingOrder": [
+            "small-blind",
+            "big-blind"
+          ],
+          "minRaisePolicy": "double-last-bet",
+          "showdownOrdering": "high-card",
+          "cardDistribution": {
+            "holeCardsPerPlayer": 2,
+            "burnPerStreet": [
+              0,
+              1,
+              1
+            ],
+            "communityReveal": [
+              0,
+              3,
+              1,
+              1
+            ]
+          }
+        },
+        "evaluationPolicy": {
+          "engine": "lookup-table",
+          "evaluatorId": "default",
+          "supportsHiLo": false,
+          "cacheSize": 1024
+        },
+        "autoAdvance": true
+      },
+      "runtimeContext": {
+        "mode": "live"
+      },
+      "initialSnapshot": {
+        "snapshot": {
+          "handNumber": 1,
+          "seating": {
+            "dealerButton": 0,
+            "seats": [
+              {
+                "index": 0,
+                "occupant": {
+                  "playerId": "alice",
+                  "displayName": "alice"
+                },
+                "status": "occupied",
+                "stack": 100
+              },
+              {
+                "index": 1,
+                "occupant": {
+                  "playerId": "bob",
+                  "displayName": "bob"
+                },
+                "status": "occupied",
+                "stack": 99
+              },
+              {
+                "index": 2,
+                "occupant": {
+                  "playerId": "carol",
+                  "displayName": "carol"
+                },
+                "status": "occupied",
+                "stack": 98
+              },
+              {
+                "index": 3,
+                "occupant": {
+                  "playerId": "dave",
+                  "displayName": "dave"
+                },
+                "status": "occupied",
+                "stack": 100
+              },
+              {
+                "index": 4,
+                "occupant": {
+                  "playerId": "erin",
+                  "displayName": "erin"
+                },
+                "status": "occupied",
+                "stack": 100
+              },
+              {
+                "index": 5,
+                "occupant": {
+                  "playerId": "frank",
+                  "displayName": "frank"
+                },
+                "status": "occupied",
+                "stack": 100
+              }
+            ]
+          },
+          "hand": {
+            "id": "6ebaf4f1-a028-5a7c-9d45-41fbe4390045",
+            "stage": "preflop",
+            "deckSeed": "deck-seed-1",
+            "buttonSeat": 0,
+            "blinds": {
+              "smallBlind": {
+                "playerId": "bob",
+                "amount": 1
+              },
+              "bigBlind": {
+                "playerId": "carol",
+                "amount": 2
+              }
+            },
+            "ante": null,
+            "bettingRounds": [
+              {
+                "stage": "preflop",
+                "turnOrder": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ],
+                "turns": [],
+                "roundPot": 3,
+                "highestBet": 2
+              }
+            ]
+          },
+          "pots": {
+            "main": {
+              "id": "main",
+              "amount": 3,
+              "eligiblePlayers": [
+                "alice",
+                "bob",
+                "carol",
+                "dave",
+                "erin",
+                "frank"
+              ],
+              "contributions": {
+                "alice": 0,
+                "bob": 1,
+                "carol": 2,
+                "dave": 0,
+                "erin": 0,
+                "frank": 0
+              }
+            },
+            "sides": [],
+            "rake": 0
+          },
+          "cards": {
+            "remainingDeck": [
+              "Qs",
+              "7h",
+              "Th",
+              "5d",
+              "Ts",
+              "Ac",
+              "7s",
+              "Ks",
+              "8d",
+              "3s",
+              "5c",
+              "2s",
+              "Qd",
+              "8c",
+              "8h",
+              "3c",
+              "Qc",
+              "9c",
+              "6d",
+              "Kd",
+              "8s",
+              "2c",
+              "Ad",
+              "Kh",
+              "2d",
+              "6c",
+              "9h",
+              "4s",
+              "7d",
+              "Js",
+              "9s",
+              "5h",
+              "4d",
+              "4h",
+              "6h",
+              "2h",
+              "6s",
+              "Qh",
+              "4c",
+              "Jc"
+            ],
+            "burnPile": [],
+            "community": {
+              "revealSchedule": []
+            },
+            "holeCards": {
+              "alice": [
+                "Td",
+                "As"
+              ],
+              "bob": [
+                "9d",
+                "5s"
+              ],
+              "carol": [
+                "3d",
+                "Jh"
+              ],
+              "dave": [
+                "Jd",
+                "3h"
+              ],
+              "erin": [
+                "Kc",
+                "Tc"
+              ],
+              "frank": [
+                "7c",
+                "Ah"
+              ]
+            }
+          },
+          "personas": {
+            "entries": {
+              "alice": {
+                "style": "balanced",
+                "aggression": 50,
+                "tightness": 50,
+                "bluffIndex": 50,
+                "riskTolerance": 50,
+                "adaptation": {
+                  "trackedMetrics": {
+                    "vpip": 0,
+                    "pfr": 0,
+                    "aggressionFactor": 0,
+                    "showdownRate": 0,
+                    "tiltIndicator": 0
+                  },
+                  "lastUpdated": 1760845937927,
+                  "featureVector": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5
+                  ]
+                }
+              },
+              "bob": {
+                "style": "balanced",
+                "aggression": 50,
+                "tightness": 50,
+                "bluffIndex": 50,
+                "riskTolerance": 50,
+                "adaptation": {
+                  "trackedMetrics": {
+                    "vpip": 0,
+                    "pfr": 0,
+                    "aggressionFactor": 0,
+                    "showdownRate": 0,
+                    "tiltIndicator": 0
+                  },
+                  "lastUpdated": 1760845937927,
+                  "featureVector": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5
+                  ]
+                }
+              },
+              "carol": {
+                "style": "balanced",
+                "aggression": 50,
+                "tightness": 50,
+                "bluffIndex": 50,
+                "riskTolerance": 50,
+                "adaptation": {
+                  "trackedMetrics": {
+                    "vpip": 0,
+                    "pfr": 0,
+                    "aggressionFactor": 0,
+                    "showdownRate": 0,
+                    "tiltIndicator": 0
+                  },
+                  "lastUpdated": 1760845937927,
+                  "featureVector": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5
+                  ]
+                }
+              },
+              "dave": {
+                "style": "balanced",
+                "aggression": 50,
+                "tightness": 50,
+                "bluffIndex": 50,
+                "riskTolerance": 50,
+                "adaptation": {
+                  "trackedMetrics": {
+                    "vpip": 0,
+                    "pfr": 0,
+                    "aggressionFactor": 0,
+                    "showdownRate": 0,
+                    "tiltIndicator": 0
+                  },
+                  "lastUpdated": 1760845937927,
+                  "featureVector": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5
+                  ]
+                }
+              },
+              "erin": {
+                "style": "balanced",
+                "aggression": 50,
+                "tightness": 50,
+                "bluffIndex": 50,
+                "riskTolerance": 50,
+                "adaptation": {
+                  "trackedMetrics": {
+                    "vpip": 0,
+                    "pfr": 0,
+                    "aggressionFactor": 0,
+                    "showdownRate": 0,
+                    "tiltIndicator": 0
+                  },
+                  "lastUpdated": 1760845937927,
+                  "featureVector": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5
+                  ]
+                }
+              },
+              "frank": {
+                "style": "balanced",
+                "aggression": 50,
+                "tightness": 50,
+                "bluffIndex": 50,
+                "riskTolerance": 50,
+                "adaptation": {
+                  "trackedMetrics": {
+                    "vpip": 0,
+                    "pfr": 0,
+                    "aggressionFactor": 0,
+                    "showdownRate": 0,
+                    "tiltIndicator": 0
+                  },
+                  "lastUpdated": 1760845937927,
+                  "featureVector": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5
+                  ]
+                }
+              }
+            }
+          },
+          "clock": {
+            "currentActor": "dave",
+            "deadline": 1760845967927,
+            "perTurnMs": 30000,
+            "bankMs": {
+              "alice": 0,
+              "bob": 0,
+              "carol": 0,
+              "dave": 0,
+              "erin": 0,
+              "frank": 0
+            },
+            "pauses": []
+          },
+          "flags": {
+            "showdownLocked": false,
+            "autoRunout": false,
+            "pendingEliminations": [],
+            "rebuyAvailable": false,
+            "advisoryPending": false,
+            "recoveryMode": false
+          },
+          "index": 0
+        },
+        "envelopeVersion": 1
+      },
+      "activeSnapshot": {
+        "handNumber": 1,
+        "seating": {
+          "dealerButton": 0,
+          "seats": [
+            {
+              "index": 0,
+              "occupant": {
+                "playerId": "alice",
+                "displayName": "alice"
+              },
+              "status": "occupied",
+              "stack": 0
+            },
+            {
+              "index": 1,
+              "occupant": {
+                "playerId": "bob",
+                "displayName": "bob"
+              },
+              "status": "occupied",
+              "stack": 0
+            },
+            {
+              "index": 2,
+              "occupant": {
+                "playerId": "carol",
+                "displayName": "carol"
+              },
+              "status": "occupied",
+              "stack": 98
+            },
+            {
+              "index": 3,
+              "occupant": {
+                "playerId": "dave",
+                "displayName": "dave"
+              },
+              "status": "occupied",
+              "stack": 0
+            },
+            {
+              "index": 4,
+              "occupant": {
+                "playerId": "erin",
+                "displayName": "erin"
+              },
+              "status": "occupied",
+              "stack": 96
+            },
+            {
+              "index": 5,
+              "occupant": {
+                "playerId": "frank",
+                "displayName": "frank"
+              },
+              "status": "occupied",
+              "stack": 96
+            }
+          ]
+        },
+        "hand": {
+          "id": "6ebaf4f1-a028-5a7c-9d45-41fbe4390045",
+          "stage": "preflop",
+          "deckSeed": "deck-seed-1",
+          "buttonSeat": 0,
+          "blinds": {
+            "smallBlind": {
+              "playerId": "bob",
+              "amount": 1
+            },
+            "bigBlind": {
+              "playerId": "carol",
+              "amount": 2
+            }
+          },
+          "ante": null,
+          "bettingRounds": [
+            {
+              "stage": "preflop",
+              "turnOrder": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "turns": [
+                {
+                  "id": "01K7X9HF89P454M80JFQ48Q3D9",
+                  "actor": "dave",
+                  "action": {
+                    "type": "call",
+                    "amount": 2,
+                    "isAllIn": false
+                  },
+                  "legalOptions": [
+                    {
+                      "type": "fold"
+                    },
+                    {
+                      "type": "call",
+                      "amount": 2
+                    },
+                    {
+                      "type": "raise",
+                      "min": 4,
+                      "max": 100,
+                      "increment": 2
+                    },
+                    {
+                      "type": "all-in",
+                      "amount": 100
+                    }
+                  ],
+                  "stackBefore": 100,
+                  "stackAfter": 98,
+                  "contribution": 2,
+                  "timestamp": 1760845937929,
+                  "metadata": {
+                    "engineVersion": "engine.v0.phase3",
+                    "availableActionsAtDecision": [
+                      {
+                        "type": "fold"
+                      },
+                      {
+                        "type": "call",
+                        "amount": 2
+                      },
+                      {
+                        "type": "raise",
+                        "min": 4,
+                        "max": 100,
+                        "increment": 2
+                      },
+                      {
+                        "type": "all-in",
+                        "amount": 100
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "01K7X9HF89CS02WG8YE4H4QGB4",
+                  "actor": "erin",
+                  "action": {
+                    "type": "raise",
+                    "amount": 4,
+                    "to": 4,
+                    "isAllIn": false
+                  },
+                  "legalOptions": [
+                    {
+                      "type": "fold"
+                    },
+                    {
+                      "type": "call",
+                      "amount": 2
+                    },
+                    {
+                      "type": "raise",
+                      "min": 4,
+                      "max": 100,
+                      "increment": 2
+                    },
+                    {
+                      "type": "all-in",
+                      "amount": 100
+                    }
+                  ],
+                  "stackBefore": 100,
+                  "stackAfter": 96,
+                  "contribution": 4,
+                  "timestamp": 1760845937929,
+                  "metadata": {
+                    "engineVersion": "engine.v0.phase3",
+                    "availableActionsAtDecision": [
+                      {
+                        "type": "fold"
+                      },
+                      {
+                        "type": "call",
+                        "amount": 2
+                      },
+                      {
+                        "type": "raise",
+                        "min": 4,
+                        "max": 100,
+                        "increment": 2
+                      },
+                      {
+                        "type": "all-in",
+                        "amount": 100
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "01K7X9HF8AM37YHDME6RBC4FBR",
+                  "actor": "frank",
+                  "action": {
+                    "type": "call",
+                    "amount": 4,
+                    "isAllIn": false
+                  },
+                  "legalOptions": [
+                    {
+                      "type": "fold"
+                    },
+                    {
+                      "type": "call",
+                      "amount": 4
+                    },
+                    {
+                      "type": "raise",
+                      "min": 6,
+                      "max": 100,
+                      "increment": 2
+                    },
+                    {
+                      "type": "all-in",
+                      "amount": 100
+                    }
+                  ],
+                  "stackBefore": 100,
+                  "stackAfter": 96,
+                  "contribution": 4,
+                  "timestamp": 1760845937930,
+                  "metadata": {
+                    "engineVersion": "engine.v0.phase3",
+                    "availableActionsAtDecision": [
+                      {
+                        "type": "fold"
+                      },
+                      {
+                        "type": "call",
+                        "amount": 4
+                      },
+                      {
+                        "type": "raise",
+                        "min": 6,
+                        "max": 100,
+                        "increment": 2
+                      },
+                      {
+                        "type": "all-in",
+                        "amount": 100
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "01K7X9HF8A698Y9WZPMWZ7JP49",
+                  "actor": "alice",
+                  "action": {
+                    "type": "raise",
+                    "amount": 100,
+                    "to": 100,
+                    "isAllIn": true
+                  },
+                  "legalOptions": [
+                    {
+                      "type": "fold"
+                    },
+                    {
+                      "type": "call",
+                      "amount": 4
+                    },
+                    {
+                      "type": "raise",
+                      "min": 6,
+                      "max": 100,
+                      "increment": 2
+                    },
+                    {
+                      "type": "all-in",
+                      "amount": 100
+                    }
+                  ],
+                  "stackBefore": 100,
+                  "stackAfter": 0,
+                  "contribution": 100,
+                  "timestamp": 1760845937930,
+                  "metadata": {
+                    "engineVersion": "engine.v0.phase3",
+                    "availableActionsAtDecision": [
+                      {
+                        "type": "fold"
+                      },
+                      {
+                        "type": "call",
+                        "amount": 4
+                      },
+                      {
+                        "type": "raise",
+                        "min": 6,
+                        "max": 100,
+                        "increment": 2
+                      },
+                      {
+                        "type": "all-in",
+                        "amount": 100
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "01K7X9HF8BBZ70WD0ATA5HMSQN",
+                  "actor": "bob",
+                  "action": {
+                    "type": "call",
+                    "amount": 99,
+                    "isAllIn": true
+                  },
+                  "legalOptions": [
+                    {
+                      "type": "fold"
+                    },
+                    {
+                      "type": "all-in",
+                      "amount": 99
+                    }
+                  ],
+                  "stackBefore": 99,
+                  "stackAfter": 0,
+                  "contribution": 99,
+                  "timestamp": 1760845937931,
+                  "metadata": {
+                    "engineVersion": "engine.v0.phase3",
+                    "availableActionsAtDecision": [
+                      {
+                        "type": "fold"
+                      },
+                      {
+                        "type": "all-in",
+                        "amount": 99
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "01K7X9HF8CTDC7X8C11Q8FKDNN",
+                  "actor": "carol",
+                  "action": {
+                    "type": "fold"
+                  },
+                  "legalOptions": [
+                    {
+                      "type": "fold"
+                    },
+                    {
+                      "type": "all-in",
+                      "amount": 98
+                    }
+                  ],
+                  "stackBefore": 98,
+                  "stackAfter": 98,
+                  "contribution": 0,
+                  "timestamp": 1760845937932,
+                  "metadata": {
+                    "engineVersion": "engine.v0.phase3",
+                    "availableActionsAtDecision": [
+                      {
+                        "type": "fold"
+                      },
+                      {
+                        "type": "all-in",
+                        "amount": 98
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "01K7X9HF8DB38EWK1VGBGA2GS9",
+                  "actor": "dave",
+                  "action": {
+                    "type": "call",
+                    "amount": 98,
+                    "isAllIn": true
+                  },
+                  "legalOptions": [
+                    {
+                      "type": "fold"
+                    },
+                    {
+                      "type": "call",
+                      "amount": 98
+                    },
+                    {
+                      "type": "all-in",
+                      "amount": 100
+                    }
+                  ],
+                  "stackBefore": 98,
+                  "stackAfter": 0,
+                  "contribution": 98,
+                  "timestamp": 1760845937933,
+                  "metadata": {
+                    "engineVersion": "engine.v0.phase3",
+                    "availableActionsAtDecision": [
+                      {
+                        "type": "fold"
+                      },
+                      {
+                        "type": "call",
+                        "amount": 98
+                      },
+                      {
+                        "type": "all-in",
+                        "amount": 100
+                      }
+                    ]
+                  }
+                }
+              ],
+              "roundPot": 310,
+              "highestBet": 100,
+              "lastAggressor": "alice"
+            }
+          ]
+        },
+        "pots": {
+          "main": {
+            "id": "pot-main-0",
+            "amount": 12,
+            "eligiblePlayers": [
+              "alice",
+              "bob",
+              "dave",
+              "erin",
+              "frank"
+            ],
+            "contributions": {
+              "bob": 2,
+              "carol": 2,
+              "dave": 2,
+              "erin": 2,
+              "frank": 2,
+              "alice": 2
+            }
+          },
+          "sides": [
+            {
+              "id": "pot-side-1",
+              "amount": 10,
+              "eligiblePlayers": [
+                "alice",
+                "bob",
+                "dave",
+                "erin",
+                "frank"
+              ],
+              "contributions": {
+                "bob": 2,
+                "carol": 0,
+                "dave": 2,
+                "erin": 2,
+                "frank": 2,
+                "alice": 2
+              }
+            },
+            {
+              "id": "pot-side-2",
+              "amount": 288,
+              "eligiblePlayers": [
+                "alice",
+                "bob",
+                "dave"
+              ],
+              "contributions": {
+                "bob": 96,
+                "carol": 0,
+                "dave": 96,
+                "erin": 0,
+                "frank": 0,
+                "alice": 96
+              }
+            }
+          ],
+          "rake": 0
+        },
+        "cards": {
+          "remainingDeck": [
+            "Qs",
+            "7h",
+            "Th",
+            "5d",
+            "Ts",
+            "Ac",
+            "7s",
+            "Ks",
+            "8d",
+            "3s",
+            "5c",
+            "2s",
+            "Qd",
+            "8c",
+            "8h",
+            "3c",
+            "Qc",
+            "9c",
+            "6d",
+            "Kd",
+            "8s",
+            "2c",
+            "Ad",
+            "Kh",
+            "2d",
+            "6c",
+            "9h",
+            "4s",
+            "7d",
+            "Js",
+            "9s",
+            "5h",
+            "4d",
+            "4h",
+            "6h",
+            "2h",
+            "6s",
+            "Qh",
+            "4c",
+            "Jc"
+          ],
+          "burnPile": [],
+          "community": {
+            "revealSchedule": []
+          },
+          "holeCards": {
+            "alice": [
+              "Td",
+              "As"
+            ],
+            "bob": [
+              "9d",
+              "5s"
+            ],
+            "carol": [
+              "3d",
+              "Jh"
+            ],
+            "dave": [
+              "Jd",
+              "3h"
+            ],
+            "erin": [
+              "Kc",
+              "Tc"
+            ],
+            "frank": [
+              "7c",
+              "Ah"
+            ]
+          }
+        },
+        "personas": {
+          "entries": {
+            "alice": {
+              "style": "balanced",
+              "aggression": 50,
+              "tightness": 50,
+              "bluffIndex": 50,
+              "riskTolerance": 50,
+              "adaptation": {
+                "trackedMetrics": {
+                  "vpip": 0,
+                  "pfr": 0,
+                  "aggressionFactor": 0,
+                  "showdownRate": 0,
+                  "tiltIndicator": 0
+                },
+                "lastUpdated": 1760845937927,
+                "featureVector": [
+                  0.5,
+                  0.5,
+                  0.5,
+                  0.5
+                ]
+              }
+            },
+            "bob": {
+              "style": "balanced",
+              "aggression": 50,
+              "tightness": 50,
+              "bluffIndex": 50,
+              "riskTolerance": 50,
+              "adaptation": {
+                "trackedMetrics": {
+                  "vpip": 0,
+                  "pfr": 0,
+                  "aggressionFactor": 0,
+                  "showdownRate": 0,
+                  "tiltIndicator": 0
+                },
+                "lastUpdated": 1760845937927,
+                "featureVector": [
+                  0.5,
+                  0.5,
+                  0.5,
+                  0.5
+                ]
+              }
+            },
+            "carol": {
+              "style": "balanced",
+              "aggression": 50,
+              "tightness": 50,
+              "bluffIndex": 50,
+              "riskTolerance": 50,
+              "adaptation": {
+                "trackedMetrics": {
+                  "vpip": 0,
+                  "pfr": 0,
+                  "aggressionFactor": 0,
+                  "showdownRate": 0,
+                  "tiltIndicator": 0
+                },
+                "lastUpdated": 1760845937927,
+                "featureVector": [
+                  0.5,
+                  0.5,
+                  0.5,
+                  0.5
+                ]
+              }
+            },
+            "dave": {
+              "style": "balanced",
+              "aggression": 50,
+              "tightness": 50,
+              "bluffIndex": 50,
+              "riskTolerance": 50,
+              "adaptation": {
+                "trackedMetrics": {
+                  "vpip": 0,
+                  "pfr": 0,
+                  "aggressionFactor": 0,
+                  "showdownRate": 0,
+                  "tiltIndicator": 0
+                },
+                "lastUpdated": 1760845937927,
+                "featureVector": [
+                  0.5,
+                  0.5,
+                  0.5,
+                  0.5
+                ]
+              }
+            },
+            "erin": {
+              "style": "balanced",
+              "aggression": 50,
+              "tightness": 50,
+              "bluffIndex": 50,
+              "riskTolerance": 50,
+              "adaptation": {
+                "trackedMetrics": {
+                  "vpip": 0,
+                  "pfr": 0,
+                  "aggressionFactor": 0,
+                  "showdownRate": 0,
+                  "tiltIndicator": 0
+                },
+                "lastUpdated": 1760845937927,
+                "featureVector": [
+                  0.5,
+                  0.5,
+                  0.5,
+                  0.5
+                ]
+              }
+            },
+            "frank": {
+              "style": "balanced",
+              "aggression": 50,
+              "tightness": 50,
+              "bluffIndex": 50,
+              "riskTolerance": 50,
+              "adaptation": {
+                "trackedMetrics": {
+                  "vpip": 0,
+                  "pfr": 0,
+                  "aggressionFactor": 0,
+                  "showdownRate": 0,
+                  "tiltIndicator": 0
+                },
+                "lastUpdated": 1760845937927,
+                "featureVector": [
+                  0.5,
+                  0.5,
+                  0.5,
+                  0.5
+                ]
+              }
+            }
+          }
+        },
+        "clock": {
+          "currentActor": "erin",
+          "deadline": 1760845967933,
+          "perTurnMs": 30000,
+          "bankMs": {
+            "alice": 0,
+            "bob": 0,
+            "carol": 0,
+            "dave": 0,
+            "erin": 0,
+            "frank": 0
+          },
+          "pauses": []
+        },
+        "flags": {
+          "showdownLocked": false,
+          "autoRunout": false,
+          "pendingEliminations": [],
+          "rebuyAvailable": false,
+          "advisoryPending": false,
+          "recoveryMode": false
+        },
+        "index": 7
+      },
+      "metrics": {
+        "handsDealt": 0,
+        "potsAwarded": 6,
+        "averagePot": 51.166666666666664,
+        "avgIntentLatencyMs": 0,
+        "maxIntentLatencyMs": 0,
+        "timeoutsHard": 0,
+        "recoveries": 0,
+        "simulationsRun": 0,
+        "advisoryEquityRequests": 0
+      },
+      "channels": {
+        "realtime": "session:session-1",
+        "analytics": {
+          "provider": "noop",
+          "streamId": "session-1",
+          "batching": {
+            "maxBatch": 100,
+            "flushMs": 1000
+          }
+        },
+        "replay": {
+          "transport": "filesystem",
+          "retentionHands": 20
+        },
+        "advisory": {
+          "requestTopic": "advisor:session-1",
+          "responseTopic": "advisor:session-1:responses",
+          "timeoutMs": 5000
+        }
+      },
+      "events": [
+        {
+          "event": {
+            "id": "01K7X9HF89P454M80JFQ48Q3D9",
+            "actor": "dave",
+            "action": {
+              "type": "call",
+              "amount": 2,
+              "isAllIn": false
+            },
+            "legalOptions": [
+              {
+                "type": "fold"
+              },
+              {
+                "type": "call",
+                "amount": 2
+              },
+              {
+                "type": "raise",
+                "min": 4,
+                "max": 100,
+                "increment": 2
+              },
+              {
+                "type": "all-in",
+                "amount": 100
+              }
+            ],
+            "stackBefore": 100,
+            "stackAfter": 98,
+            "contribution": 2,
+            "timestamp": 1760845937929,
+            "metadata": {
+              "engineVersion": "engine.v0.phase3",
+              "availableActionsAtDecision": [
+                {
+                  "type": "fold"
+                },
+                {
+                  "type": "call",
+                  "amount": 2
+                },
+                {
+                  "type": "raise",
+                  "min": 4,
+                  "max": 100,
+                  "increment": 2
+                },
+                {
+                  "type": "all-in",
+                  "amount": 100
+                }
+              ]
+            }
+          },
+          "envelopeVersion": 1
+        },
+        {
+          "event": {
+            "id": "01K7X9HF89CS02WG8YE4H4QGB4",
+            "actor": "erin",
+            "action": {
+              "type": "raise",
+              "amount": 4,
+              "to": 4,
+              "isAllIn": false
+            },
+            "legalOptions": [
+              {
+                "type": "fold"
+              },
+              {
+                "type": "call",
+                "amount": 2
+              },
+              {
+                "type": "raise",
+                "min": 4,
+                "max": 100,
+                "increment": 2
+              },
+              {
+                "type": "all-in",
+                "amount": 100
+              }
+            ],
+            "stackBefore": 100,
+            "stackAfter": 96,
+            "contribution": 4,
+            "timestamp": 1760845937929,
+            "metadata": {
+              "engineVersion": "engine.v0.phase3",
+              "availableActionsAtDecision": [
+                {
+                  "type": "fold"
+                },
+                {
+                  "type": "call",
+                  "amount": 2
+                },
+                {
+                  "type": "raise",
+                  "min": 4,
+                  "max": 100,
+                  "increment": 2
+                },
+                {
+                  "type": "all-in",
+                  "amount": 100
+                }
+              ]
+            }
+          },
+          "envelopeVersion": 1
+        },
+        {
+          "event": {
+            "id": "01K7X9HF8AM37YHDME6RBC4FBR",
+            "actor": "frank",
+            "action": {
+              "type": "call",
+              "amount": 4,
+              "isAllIn": false
+            },
+            "legalOptions": [
+              {
+                "type": "fold"
+              },
+              {
+                "type": "call",
+                "amount": 4
+              },
+              {
+                "type": "raise",
+                "min": 6,
+                "max": 100,
+                "increment": 2
+              },
+              {
+                "type": "all-in",
+                "amount": 100
+              }
+            ],
+            "stackBefore": 100,
+            "stackAfter": 96,
+            "contribution": 4,
+            "timestamp": 1760845937930,
+            "metadata": {
+              "engineVersion": "engine.v0.phase3",
+              "availableActionsAtDecision": [
+                {
+                  "type": "fold"
+                },
+                {
+                  "type": "call",
+                  "amount": 4
+                },
+                {
+                  "type": "raise",
+                  "min": 6,
+                  "max": 100,
+                  "increment": 2
+                },
+                {
+                  "type": "all-in",
+                  "amount": 100
+                }
+              ]
+            }
+          },
+          "envelopeVersion": 1
+        },
+        {
+          "event": {
+            "id": "01K7X9HF8A698Y9WZPMWZ7JP49",
+            "actor": "alice",
+            "action": {
+              "type": "raise",
+              "amount": 100,
+              "to": 100,
+              "isAllIn": true
+            },
+            "legalOptions": [
+              {
+                "type": "fold"
+              },
+              {
+                "type": "call",
+                "amount": 4
+              },
+              {
+                "type": "raise",
+                "min": 6,
+                "max": 100,
+                "increment": 2
+              },
+              {
+                "type": "all-in",
+                "amount": 100
+              }
+            ],
+            "stackBefore": 100,
+            "stackAfter": 0,
+            "contribution": 100,
+            "timestamp": 1760845937930,
+            "metadata": {
+              "engineVersion": "engine.v0.phase3",
+              "availableActionsAtDecision": [
+                {
+                  "type": "fold"
+                },
+                {
+                  "type": "call",
+                  "amount": 4
+                },
+                {
+                  "type": "raise",
+                  "min": 6,
+                  "max": 100,
+                  "increment": 2
+                },
+                {
+                  "type": "all-in",
+                  "amount": 100
+                }
+              ]
+            }
+          },
+          "envelopeVersion": 1
+        },
+        {
+          "event": {
+            "id": "01K7X9HF8BBZ70WD0ATA5HMSQN",
+            "actor": "bob",
+            "action": {
+              "type": "call",
+              "amount": 99,
+              "isAllIn": true
+            },
+            "legalOptions": [
+              {
+                "type": "fold"
+              },
+              {
+                "type": "all-in",
+                "amount": 99
+              }
+            ],
+            "stackBefore": 99,
+            "stackAfter": 0,
+            "contribution": 99,
+            "timestamp": 1760845937931,
+            "metadata": {
+              "engineVersion": "engine.v0.phase3",
+              "availableActionsAtDecision": [
+                {
+                  "type": "fold"
+                },
+                {
+                  "type": "all-in",
+                  "amount": 99
+                }
+              ]
+            }
+          },
+          "envelopeVersion": 1
+        },
+        {
+          "event": {
+            "id": "01K7X9HF8CTDC7X8C11Q8FKDNN",
+            "actor": "carol",
+            "action": {
+              "type": "fold"
+            },
+            "legalOptions": [
+              {
+                "type": "fold"
+              },
+              {
+                "type": "all-in",
+                "amount": 98
+              }
+            ],
+            "stackBefore": 98,
+            "stackAfter": 98,
+            "contribution": 0,
+            "timestamp": 1760845937932,
+            "metadata": {
+              "engineVersion": "engine.v0.phase3",
+              "availableActionsAtDecision": [
+                {
+                  "type": "fold"
+                },
+                {
+                  "type": "all-in",
+                  "amount": 98
+                }
+              ]
+            }
+          },
+          "envelopeVersion": 1
+        },
+        {
+          "event": {
+            "id": "01K7X9HF8DB38EWK1VGBGA2GS9",
+            "actor": "dave",
+            "action": {
+              "type": "call",
+              "amount": 98,
+              "isAllIn": true
+            },
+            "legalOptions": [
+              {
+                "type": "fold"
+              },
+              {
+                "type": "call",
+                "amount": 98
+              },
+              {
+                "type": "all-in",
+                "amount": 100
+              }
+            ],
+            "stackBefore": 98,
+            "stackAfter": 0,
+            "contribution": 98,
+            "timestamp": 1760845937933,
+            "metadata": {
+              "engineVersion": "engine.v0.phase3",
+              "availableActionsAtDecision": [
+                {
+                  "type": "fold"
+                },
+                {
+                  "type": "call",
+                  "amount": 98
+                },
+                {
+                  "type": "all-in",
+                  "amount": 100
+                }
+              ]
+            }
+          },
+          "envelopeVersion": 1
+        }
+      ]
+    },
+    "decision": {
+      "handNumber": 1,
+      "actor": "erin",
+      "handStage": "preflop",
+      "potSize": 310,
+      "effectiveStack": 0,
+      "playersLeftToAct": [
+        "erin",
+        "frank"
+      ],
+      "availableActions": [
+        {
+          "type": "fold"
+        },
+        {
+          "type": "call",
+          "amount": 96
+        },
+        {
+          "type": "all-in",
+          "amount": 100
+        }
+      ]
+    },
+    "stepsApplied": 1
+  }
+}

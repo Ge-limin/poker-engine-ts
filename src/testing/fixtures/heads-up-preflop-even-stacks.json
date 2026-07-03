@@ -1,0 +1,430 @@
+{
+  "id": "heads-up-preflop-even-stacks",
+  "description": "Heads-up preflop snapshot with even stacks and blinds posted.",
+  "origin": "test-suite",
+  "payload": {
+    "session": {
+      "id": "session-heads-up-preflop-even-stacks",
+      "config": {
+        "tableVariant": "texas-holdem",
+        "bettingStructure": "no-limit",
+        "maxSeats": 2,
+        "startingStack": 100,
+        "blindSchedule": [
+          {
+            "level": 1,
+            "smallBlind": 1,
+            "bigBlind": 2
+          }
+        ],
+        "personaPolicy": {
+          "defaultStyle": "balanced"
+        },
+        "ruleSet": {
+          "streets": [
+            "preflop",
+            "flop",
+            "turn",
+            "river",
+            "showdown"
+          ],
+          "postingOrder": [
+            "small-blind",
+            "big-blind"
+          ],
+          "minRaisePolicy": "double-last-bet",
+          "cardDistribution": {
+            "holeCardsPerPlayer": 2,
+            "burnPerStreet": [
+              0,
+              1,
+              1
+            ],
+            "communityReveal": [
+              0,
+              3,
+              1,
+              1
+            ]
+          },
+          "showdownOrdering": "high-card"
+        },
+        "evaluationPolicy": {
+          "engine": "lookup-table",
+          "evaluatorId": "baseline",
+          "supportsHiLo": false,
+          "cacheSize": 1024
+        },
+        "autoAdvance": true
+      },
+      "runtimeContext": {
+        "mode": "live"
+      },
+      "initialSnapshot": {
+        "snapshot": {
+          "handNumber": 1,
+          "seating": {
+            "dealerButton": 0,
+            "seats": [
+              {
+                "index": 0,
+                "occupant": {
+                  "playerId": "player-a",
+                  "displayName": "Player A"
+                },
+                "status": "occupied",
+                "stack": 100
+              },
+              {
+                "index": 1,
+                "occupant": {
+                  "playerId": "player-b",
+                  "displayName": "Player B"
+                },
+                "status": "occupied",
+                "stack": 100
+              }
+            ]
+          },
+          "hand": {
+            "id": "hand-heads-up-preflop-even-stacks",
+            "stage": "preflop",
+            "deckSeed": "fixture-seed",
+            "buttonSeat": 0,
+            "blinds": {
+              "smallBlind": {
+                "playerId": "player-a",
+                "amount": 1
+              },
+              "bigBlind": {
+                "playerId": "player-b",
+                "amount": 2
+              }
+            },
+            "ante": null,
+            "bettingRounds": [
+              {
+                "stage": "preflop",
+                "turnOrder": [
+                  0,
+                  1
+                ],
+                "turns": [],
+                "roundPot": 0,
+                "highestBet": 2
+              }
+            ]
+          },
+          "pots": {
+            "main": {
+              "id": "main",
+              "amount": 0,
+              "eligiblePlayers": [
+                "player-a",
+                "player-b"
+              ],
+              "contributions": {
+                "player-a": 0,
+                "player-b": 0
+              }
+            },
+            "sides": [],
+            "rake": 0
+          },
+          "cards": {
+            "remainingDeck": [],
+            "burnPile": [],
+            "community": {
+              "revealSchedule": []
+            },
+            "holeCards": {
+              "player-a": null,
+              "player-b": null
+            }
+          },
+          "personas": {
+            "entries": {
+              "player-a": {
+                "style": "balanced",
+                "aggression": 50,
+                "tightness": 50,
+                "bluffIndex": 50,
+                "riskTolerance": 50,
+                "adaptation": {
+                  "trackedMetrics": {
+                    "vpip": 0,
+                    "pfr": 0,
+                    "aggressionFactor": 0,
+                    "showdownRate": 0,
+                    "tiltIndicator": 0
+                  },
+                  "lastUpdated": 1700000000000,
+                  "featureVector": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5
+                  ]
+                }
+              },
+              "player-b": {
+                "style": "balanced",
+                "aggression": 50,
+                "tightness": 50,
+                "bluffIndex": 50,
+                "riskTolerance": 50,
+                "adaptation": {
+                  "trackedMetrics": {
+                    "vpip": 0,
+                    "pfr": 0,
+                    "aggressionFactor": 0,
+                    "showdownRate": 0,
+                    "tiltIndicator": 0
+                  },
+                  "lastUpdated": 1700000000000,
+                  "featureVector": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5
+                  ]
+                }
+              }
+            }
+          },
+          "clock": {
+            "currentActor": "player-a",
+            "perTurnMs": 0,
+            "bankMs": {
+              "player-a": 0,
+              "player-b": 0
+            },
+            "pauses": []
+          },
+          "flags": {
+            "showdownLocked": false,
+            "autoRunout": false,
+            "pendingEliminations": [],
+            "rebuyAvailable": false,
+            "advisoryPending": false,
+            "recoveryMode": false
+          },
+          "index": 0
+        },
+        "envelopeVersion": 1
+      },
+      "activeSnapshot": {
+        "handNumber": 1,
+        "seating": {
+          "dealerButton": 0,
+          "seats": [
+            {
+              "index": 0,
+              "occupant": {
+                "playerId": "player-a",
+                "displayName": "Player A"
+              },
+              "status": "occupied",
+              "stack": 99
+            },
+            {
+              "index": 1,
+              "occupant": {
+                "playerId": "player-b",
+                "displayName": "Player B"
+              },
+              "status": "occupied",
+              "stack": 98
+            }
+          ]
+        },
+        "hand": {
+          "id": "hand-heads-up-preflop-even-stacks",
+          "stage": "preflop",
+          "deckSeed": "fixture-seed",
+          "buttonSeat": 0,
+          "blinds": {
+            "smallBlind": {
+              "playerId": "player-a",
+              "amount": 1
+            },
+            "bigBlind": {
+              "playerId": "player-b",
+              "amount": 2
+            }
+          },
+          "ante": null,
+          "bettingRounds": [
+            {
+              "stage": "preflop",
+              "turnOrder": [
+                0,
+                1
+              ],
+              "turns": [],
+              "roundPot": 3,
+              "highestBet": 2
+            }
+          ]
+        },
+        "pots": {
+          "main": {
+            "id": "main",
+            "amount": 3,
+            "eligiblePlayers": [
+              "player-a",
+              "player-b"
+            ],
+            "contributions": {
+              "player-a": 1,
+              "player-b": 2
+            }
+          },
+          "sides": [],
+          "rake": 0
+        },
+        "cards": {
+          "remainingDeck": [],
+          "burnPile": [],
+          "community": {
+            "revealSchedule": []
+          },
+          "holeCards": {
+            "player-a": null,
+            "player-b": null
+          }
+        },
+        "personas": {
+          "entries": {
+            "player-a": {
+              "style": "balanced",
+              "aggression": 50,
+              "tightness": 50,
+              "bluffIndex": 50,
+              "riskTolerance": 50,
+              "adaptation": {
+                "trackedMetrics": {
+                  "vpip": 0,
+                  "pfr": 0,
+                  "aggressionFactor": 0,
+                  "showdownRate": 0,
+                  "tiltIndicator": 0
+                },
+                "lastUpdated": 1700000000000,
+                "featureVector": [
+                  0.5,
+                  0.5,
+                  0.5,
+                  0.5
+                ]
+              }
+            },
+            "player-b": {
+              "style": "balanced",
+              "aggression": 50,
+              "tightness": 50,
+              "bluffIndex": 50,
+              "riskTolerance": 50,
+              "adaptation": {
+                "trackedMetrics": {
+                  "vpip": 0,
+                  "pfr": 0,
+                  "aggressionFactor": 0,
+                  "showdownRate": 0,
+                  "tiltIndicator": 0
+                },
+                "lastUpdated": 1700000000000,
+                "featureVector": [
+                  0.5,
+                  0.5,
+                  0.5,
+                  0.5
+                ]
+              }
+            }
+          }
+        },
+        "clock": {
+          "currentActor": "player-a",
+          "perTurnMs": 0,
+          "bankMs": {
+            "player-a": 0,
+            "player-b": 0
+          },
+          "pauses": []
+        },
+        "flags": {
+          "showdownLocked": false,
+          "autoRunout": false,
+          "pendingEliminations": [],
+          "rebuyAvailable": false,
+          "advisoryPending": false,
+          "recoveryMode": false
+        },
+        "index": 1
+      },
+      "metrics": {
+        "handsDealt": 1,
+        "potsAwarded": 0,
+        "averagePot": 0,
+        "avgIntentLatencyMs": 0,
+        "maxIntentLatencyMs": 0,
+        "timeoutsHard": 0,
+        "recoveries": 0,
+        "simulationsRun": 0,
+        "advisoryEquityRequests": 0
+      },
+      "channels": {
+        "realtime": "realtime:heads-up-preflop-even-stacks",
+        "analytics": {
+          "provider": "noop",
+          "streamId": "analytics:heads-up-preflop-even-stacks",
+          "batching": {
+            "maxBatch": 10,
+            "flushMs": 1000
+          }
+        },
+        "replay": {
+          "transport": "filesystem",
+          "retentionHands": 50
+        },
+        "advisory": {
+          "requestTopic": "advisor:heads-up-preflop-even-stacks",
+          "responseTopic": "advisor:heads-up-preflop-even-stacks:responses",
+          "timeoutMs": 5000
+        }
+      },
+      "events": []
+    },
+    "decision": {
+      "handNumber": 1,
+      "actor": "player-a",
+      "handStage": "preflop",
+      "potSize": 3,
+      "effectiveStack": 98,
+      "playersLeftToAct": [
+        "player-a"
+      ],
+      "availableActions": [
+        {
+          "type": "fold"
+        },
+        {
+          "type": "call",
+          "amount": 1
+        },
+        {
+          "type": "raise",
+          "min": 4,
+          "max": 98,
+          "increment": 2
+        },
+        {
+          "type": "all-in",
+          "amount": 98
+        }
+      ]
+    },
+    "stepsApplied": 0
+  }
+}

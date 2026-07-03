@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": false,
+    "moduleDetection": "force",
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": false,
+    "noEmit": true,
+    "allowJs": false
+  },
+  "include": [
+    "src",
+    "scripts/generate-street-fixtures.ts",
+    "scripts/run-scenarios.ts",
+    "examples/quickstart.ts",
+    "tsup.config.ts",
+    "vitest.config.ts"
+  ],
+  "exclude": ["node_modules", "dist", "examples/playground"]
+}

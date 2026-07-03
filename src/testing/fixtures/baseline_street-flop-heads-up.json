@@ -1,0 +1,947 @@
+{
+  "id": "street-flop-heads-up",
+  "description": "Flop baseline generated via headless random state runner (2 players, decision mode: uniform, steps: 16, seed: 1998800467). Captured on 2025-10-19T03:52:17.975Z.",
+  "origin": "headless-script",
+  "payload": {
+    "session": {
+      "id": "session-1",
+      "config": {
+        "tableVariant": "texas-holdem",
+        "bettingStructure": "no-limit",
+        "maxSeats": 6,
+        "startingStack": 100,
+        "blindSchedule": [
+          {
+            "level": 1,
+            "smallBlind": 1,
+            "bigBlind": 2
+          }
+        ],
+        "personaPolicy": {
+          "defaultStyle": "balanced"
+        },
+        "ruleSet": {
+          "streets": [
+            "preflop",
+            "flop",
+            "turn",
+            "river",
+            "showdown"
+          ],
+          "postingOrder": [
+            "small-blind",
+            "big-blind"
+          ],
+          "minRaisePolicy": "double-last-bet",
+          "showdownOrdering": "high-card",
+          "cardDistribution": {
+            "holeCardsPerPlayer": 2,
+            "burnPerStreet": [
+              0,
+              1,
+              1
+            ],
+            "communityReveal": [
+              0,
+              3,
+              1,
+              1
+            ]
+          }
+        },
+        "evaluationPolicy": {
+          "engine": "lookup-table",
+          "evaluatorId": "default",
+          "supportsHiLo": false,
+          "cacheSize": 1024
+        },
+        "autoAdvance": true
+      },
+      "runtimeContext": {
+        "mode": "live"
+      },
+      "initialSnapshot": {
+        "snapshot": {
+          "handNumber": 1,
+          "seating": {
+            "dealerButton": 0,
+            "seats": [
+              {
+                "index": 0,
+                "occupant": {
+                  "playerId": "alice",
+                  "displayName": "alice"
+                },
+                "status": "occupied",
+                "stack": 99
+              },
+              {
+                "index": 1,
+                "occupant": {
+                  "playerId": "bob",
+                  "displayName": "bob"
+                },
+                "status": "occupied",
+                "stack": 98
+              },
+              {
+                "index": 2,
+                "status": "open",
+                "stack": 0
+              },
+              {
+                "index": 3,
+                "status": "open",
+                "stack": 0
+              },
+              {
+                "index": 4,
+                "status": "open",
+                "stack": 0
+              },
+              {
+                "index": 5,
+                "status": "open",
+                "stack": 0
+              }
+            ]
+          },
+          "hand": {
+            "id": "6ebaf4f1-a028-5a7c-9d45-41fbe4390045",
+            "stage": "preflop",
+            "deckSeed": "deck-seed-1",
+            "buttonSeat": 0,
+            "blinds": {
+              "smallBlind": {
+                "playerId": "alice",
+                "amount": 1
+              },
+              "bigBlind": {
+                "playerId": "bob",
+                "amount": 2
+              }
+            },
+            "ante": null,
+            "bettingRounds": [
+              {
+                "stage": "preflop",
+                "turnOrder": [
+                  0,
+                  1
+                ],
+                "turns": [],
+                "roundPot": 3,
+                "highestBet": 2
+              }
+            ]
+          },
+          "pots": {
+            "main": {
+              "id": "main",
+              "amount": 3,
+              "eligiblePlayers": [
+                "alice",
+                "bob"
+              ],
+              "contributions": {
+                "alice": 1,
+                "bob": 2
+              }
+            },
+            "sides": [],
+            "rake": 0
+          },
+          "cards": {
+            "remainingDeck": [
+              "Kd",
+              "4s",
+              "5h",
+              "Td",
+              "Tc",
+              "4h",
+              "3d",
+              "6s",
+              "Qc",
+              "2h",
+              "6h",
+              "2s",
+              "As",
+              "Th",
+              "9s",
+              "Ts",
+              "Ah",
+              "2c",
+              "3c",
+              "Qs",
+              "4c",
+              "Kh",
+              "Jc",
+              "8h",
+              "5s",
+              "4d",
+              "9c",
+              "7c",
+              "3s",
+              "8s",
+              "Kc",
+              "6c",
+              "3h",
+              "Ks",
+              "8d",
+              "9d",
+              "Qh",
+              "7d",
+              "Ad",
+              "2d",
+              "9h",
+              "Jd",
+              "Jh",
+              "7s",
+              "7h",
+              "8c",
+              "5d",
+              "Qd"
+            ],
+            "burnPile": [],
+            "community": {
+              "revealSchedule": []
+            },
+            "holeCards": {
+              "alice": [
+                "5c",
+                "6d"
+              ],
+              "bob": [
+                "Ac",
+                "Js"
+              ]
+            }
+          },
+          "personas": {
+            "entries": {
+              "alice": {
+                "style": "balanced",
+                "aggression": 50,
+                "tightness": 50,
+                "bluffIndex": 50,
+                "riskTolerance": 50,
+                "adaptation": {
+                  "trackedMetrics": {
+                    "vpip": 0,
+                    "pfr": 0,
+                    "aggressionFactor": 0,
+                    "showdownRate": 0,
+                    "tiltIndicator": 0
+                  },
+                  "lastUpdated": 1760845937974,
+                  "featureVector": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5
+                  ]
+                }
+              },
+              "bob": {
+                "style": "balanced",
+                "aggression": 50,
+                "tightness": 50,
+                "bluffIndex": 50,
+                "riskTolerance": 50,
+                "adaptation": {
+                  "trackedMetrics": {
+                    "vpip": 0,
+                    "pfr": 0,
+                    "aggressionFactor": 0,
+                    "showdownRate": 0,
+                    "tiltIndicator": 0
+                  },
+                  "lastUpdated": 1760845937974,
+                  "featureVector": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5
+                  ]
+                }
+              }
+            }
+          },
+          "clock": {
+            "currentActor": "alice",
+            "deadline": 1760845967974,
+            "perTurnMs": 30000,
+            "bankMs": {
+              "alice": 0,
+              "bob": 0
+            },
+            "pauses": []
+          },
+          "flags": {
+            "showdownLocked": false,
+            "autoRunout": false,
+            "pendingEliminations": [],
+            "rebuyAvailable": false,
+            "advisoryPending": false,
+            "recoveryMode": false
+          },
+          "index": 0
+        },
+        "envelopeVersion": 1
+      },
+      "activeSnapshot": {
+        "handNumber": 1,
+        "seating": {
+          "dealerButton": 0,
+          "seats": [
+            {
+              "index": 0,
+              "occupant": {
+                "playerId": "alice",
+                "displayName": "alice"
+              },
+              "status": "occupied",
+              "stack": 1
+            },
+            {
+              "index": 1,
+              "occupant": {
+                "playerId": "bob",
+                "displayName": "bob"
+              },
+              "status": "occupied",
+              "stack": 0
+            },
+            {
+              "index": 2,
+              "status": "open",
+              "stack": 0
+            },
+            {
+              "index": 3,
+              "status": "open",
+              "stack": 0
+            },
+            {
+              "index": 4,
+              "status": "open",
+              "stack": 0
+            },
+            {
+              "index": 5,
+              "status": "open",
+              "stack": 0
+            }
+          ]
+        },
+        "hand": {
+          "id": "6ebaf4f1-a028-5a7c-9d45-41fbe4390045",
+          "stage": "flop",
+          "deckSeed": "deck-seed-1",
+          "buttonSeat": 0,
+          "blinds": {
+            "smallBlind": {
+              "playerId": "alice",
+              "amount": 1
+            },
+            "bigBlind": {
+              "playerId": "bob",
+              "amount": 2
+            }
+          },
+          "ante": null,
+          "bettingRounds": [
+            {
+              "stage": "preflop",
+              "turnOrder": [
+                0,
+                1
+              ],
+              "turns": [
+                {
+                  "id": "01K7X9HF9PB1TTVS1P5DSB3ZP2",
+                  "actor": "alice",
+                  "action": {
+                    "type": "raise",
+                    "amount": 4,
+                    "to": 4,
+                    "isAllIn": false
+                  },
+                  "legalOptions": [
+                    {
+                      "type": "fold"
+                    },
+                    {
+                      "type": "call",
+                      "amount": 2
+                    },
+                    {
+                      "type": "raise",
+                      "min": 4,
+                      "max": 99,
+                      "increment": 2
+                    },
+                    {
+                      "type": "all-in",
+                      "amount": 99
+                    }
+                  ],
+                  "stackBefore": 99,
+                  "stackAfter": 95,
+                  "contribution": 4,
+                  "timestamp": 1760845937974,
+                  "metadata": {
+                    "engineVersion": "engine.v0.phase3",
+                    "availableActionsAtDecision": [
+                      {
+                        "type": "fold"
+                      },
+                      {
+                        "type": "call",
+                        "amount": 2
+                      },
+                      {
+                        "type": "raise",
+                        "min": 4,
+                        "max": 99,
+                        "increment": 2
+                      },
+                      {
+                        "type": "all-in",
+                        "amount": 99
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "01K7X9HF9PQDZ7F4K2V3X63E8K",
+                  "actor": "bob",
+                  "action": {
+                    "type": "raise",
+                    "amount": 98,
+                    "to": 98,
+                    "isAllIn": true
+                  },
+                  "legalOptions": [
+                    {
+                      "type": "fold"
+                    },
+                    {
+                      "type": "call",
+                      "amount": 4
+                    },
+                    {
+                      "type": "raise",
+                      "min": 8,
+                      "max": 98,
+                      "increment": 2
+                    },
+                    {
+                      "type": "all-in",
+                      "amount": 98
+                    }
+                  ],
+                  "stackBefore": 98,
+                  "stackAfter": 0,
+                  "contribution": 98,
+                  "timestamp": 1760845937974,
+                  "metadata": {
+                    "engineVersion": "engine.v0.phase3",
+                    "availableActionsAtDecision": [
+                      {
+                        "type": "fold"
+                      },
+                      {
+                        "type": "call",
+                        "amount": 4
+                      },
+                      {
+                        "type": "raise",
+                        "min": 8,
+                        "max": 98,
+                        "increment": 2
+                      },
+                      {
+                        "type": "all-in",
+                        "amount": 98
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "01K7X9HF9QCVCCQACVW1V8GRTJ",
+                  "actor": "alice",
+                  "action": {
+                    "type": "call",
+                    "amount": 94,
+                    "isAllIn": false
+                  },
+                  "legalOptions": [
+                    {
+                      "type": "fold"
+                    },
+                    {
+                      "type": "call",
+                      "amount": 94
+                    },
+                    {
+                      "type": "all-in",
+                      "amount": 99
+                    }
+                  ],
+                  "stackBefore": 95,
+                  "stackAfter": 1,
+                  "contribution": 94,
+                  "timestamp": 1760845937975,
+                  "metadata": {
+                    "engineVersion": "engine.v0.phase3",
+                    "availableActionsAtDecision": [
+                      {
+                        "type": "fold"
+                      },
+                      {
+                        "type": "call",
+                        "amount": 94
+                      },
+                      {
+                        "type": "all-in",
+                        "amount": 99
+                      }
+                    ]
+                  }
+                }
+              ],
+              "roundPot": 199,
+              "highestBet": 98,
+              "lastAggressor": "bob"
+            },
+            {
+              "stage": "flop",
+              "turnOrder": [
+                0
+              ],
+              "turns": [],
+              "roundPot": 0,
+              "highestBet": 0
+            }
+          ]
+        },
+        "pots": {
+          "main": {
+            "id": "pot-main-0",
+            "amount": 198,
+            "eligiblePlayers": [
+              "alice",
+              "bob"
+            ],
+            "contributions": {
+              "alice": 99,
+              "bob": 99
+            }
+          },
+          "sides": [
+            {
+              "id": "pot-side-1",
+              "amount": 1,
+              "eligiblePlayers": [
+                "bob"
+              ],
+              "contributions": {
+                "alice": 0,
+                "bob": 1
+              }
+            }
+          ],
+          "rake": 0
+        },
+        "cards": {
+          "remainingDeck": [
+            "6s",
+            "Qc",
+            "2h",
+            "6h",
+            "2s",
+            "As",
+            "Th",
+            "9s",
+            "Ts",
+            "Ah",
+            "2c",
+            "3c",
+            "Qs",
+            "4c",
+            "Kh",
+            "Jc",
+            "8h",
+            "5s",
+            "4d",
+            "9c",
+            "7c",
+            "3s",
+            "8s",
+            "Kc",
+            "6c",
+            "3h",
+            "Ks",
+            "8d",
+            "9d",
+            "Qh",
+            "7d",
+            "Ad",
+            "2d",
+            "9h",
+            "Jd",
+            "Jh",
+            "7s",
+            "7h",
+            "8c",
+            "5d",
+            "Qd"
+          ],
+          "burnPile": [
+            "Td",
+            "4h"
+          ],
+          "community": {
+            "revealSchedule": [
+              {
+                "stage": "flop",
+                "cards": [
+                  "Kd",
+                  "4s",
+                  "5h"
+                ],
+                "timestamp": 1760845937975,
+                "reason": "deal"
+              },
+              {
+                "stage": "turn",
+                "cards": [
+                  "Td"
+                ],
+                "timestamp": 1760845937975,
+                "reason": "burn"
+              },
+              {
+                "stage": "turn",
+                "cards": [
+                  "Tc"
+                ],
+                "timestamp": 1760845937975,
+                "reason": "deal"
+              },
+              {
+                "stage": "river",
+                "cards": [
+                  "4h"
+                ],
+                "timestamp": 1760845937975,
+                "reason": "burn"
+              },
+              {
+                "stage": "river",
+                "cards": [
+                  "3d"
+                ],
+                "timestamp": 1760845937975,
+                "reason": "deal"
+              }
+            ],
+            "flop": [
+              "Kd",
+              "4s",
+              "5h"
+            ],
+            "turn": "Tc",
+            "river": "3d"
+          },
+          "holeCards": {
+            "alice": [
+              "5c",
+              "6d"
+            ],
+            "bob": [
+              "Ac",
+              "Js"
+            ]
+          }
+        },
+        "personas": {
+          "entries": {
+            "alice": {
+              "style": "balanced",
+              "aggression": 50,
+              "tightness": 50,
+              "bluffIndex": 50,
+              "riskTolerance": 50,
+              "adaptation": {
+                "trackedMetrics": {
+                  "vpip": 0,
+                  "pfr": 0,
+                  "aggressionFactor": 0,
+                  "showdownRate": 0,
+                  "tiltIndicator": 0
+                },
+                "lastUpdated": 1760845937974,
+                "featureVector": [
+                  0.5,
+                  0.5,
+                  0.5,
+                  0.5
+                ]
+              }
+            },
+            "bob": {
+              "style": "balanced",
+              "aggression": 50,
+              "tightness": 50,
+              "bluffIndex": 50,
+              "riskTolerance": 50,
+              "adaptation": {
+                "trackedMetrics": {
+                  "vpip": 0,
+                  "pfr": 0,
+                  "aggressionFactor": 0,
+                  "showdownRate": 0,
+                  "tiltIndicator": 0
+                },
+                "lastUpdated": 1760845937974,
+                "featureVector": [
+                  0.5,
+                  0.5,
+                  0.5,
+                  0.5
+                ]
+              }
+            }
+          }
+        },
+        "clock": {
+          "currentActor": "alice",
+          "deadline": 1760845967975,
+          "perTurnMs": 30000,
+          "bankMs": {
+            "alice": 0,
+            "bob": 0
+          },
+          "pauses": []
+        },
+        "flags": {
+          "showdownLocked": false,
+          "autoRunout": true,
+          "pendingEliminations": [],
+          "rebuyAvailable": false,
+          "advisoryPending": false,
+          "recoveryMode": false
+        },
+        "index": 4
+      },
+      "metrics": {
+        "handsDealt": 0,
+        "potsAwarded": 3,
+        "averagePot": 65.33333333333333,
+        "avgIntentLatencyMs": 0,
+        "maxIntentLatencyMs": 0,
+        "timeoutsHard": 0,
+        "recoveries": 0,
+        "simulationsRun": 0,
+        "advisoryEquityRequests": 0
+      },
+      "channels": {
+        "realtime": "session:session-1",
+        "analytics": {
+          "provider": "noop",
+          "streamId": "session-1",
+          "batching": {
+            "maxBatch": 100,
+            "flushMs": 1000
+          }
+        },
+        "replay": {
+          "transport": "filesystem",
+          "retentionHands": 20
+        },
+        "advisory": {
+          "requestTopic": "advisor:session-1",
+          "responseTopic": "advisor:session-1:responses",
+          "timeoutMs": 5000
+        }
+      },
+      "events": [
+        {
+          "event": {
+            "id": "01K7X9HF9PB1TTVS1P5DSB3ZP2",
+            "actor": "alice",
+            "action": {
+              "type": "raise",
+              "amount": 4,
+              "to": 4,
+              "isAllIn": false
+            },
+            "legalOptions": [
+              {
+                "type": "fold"
+              },
+              {
+                "type": "call",
+                "amount": 2
+              },
+              {
+                "type": "raise",
+                "min": 4,
+                "max": 99,
+                "increment": 2
+              },
+              {
+                "type": "all-in",
+                "amount": 99
+              }
+            ],
+            "stackBefore": 99,
+            "stackAfter": 95,
+            "contribution": 4,
+            "timestamp": 1760845937974,
+            "metadata": {
+              "engineVersion": "engine.v0.phase3",
+              "availableActionsAtDecision": [
+                {
+                  "type": "fold"
+                },
+                {
+                  "type": "call",
+                  "amount": 2
+                },
+                {
+                  "type": "raise",
+                  "min": 4,
+                  "max": 99,
+                  "increment": 2
+                },
+                {
+                  "type": "all-in",
+                  "amount": 99
+                }
+              ]
+            }
+          },
+          "envelopeVersion": 1
+        },
+        {
+          "event": {
+            "id": "01K7X9HF9PQDZ7F4K2V3X63E8K",
+            "actor": "bob",
+            "action": {
+              "type": "raise",
+              "amount": 98,
+              "to": 98,
+              "isAllIn": true
+            },
+            "legalOptions": [
+              {
+                "type": "fold"
+              },
+              {
+                "type": "call",
+                "amount": 4
+              },
+              {
+                "type": "raise",
+                "min": 8,
+                "max": 98,
+                "increment": 2
+              },
+              {
+                "type": "all-in",
+                "amount": 98
+              }
+            ],
+            "stackBefore": 98,
+            "stackAfter": 0,
+            "contribution": 98,
+            "timestamp": 1760845937974,
+            "metadata": {
+              "engineVersion": "engine.v0.phase3",
+              "availableActionsAtDecision": [
+                {
+                  "type": "fold"
+                },
+                {
+                  "type": "call",
+                  "amount": 4
+                },
+                {
+                  "type": "raise",
+                  "min": 8,
+                  "max": 98,
+                  "increment": 2
+                },
+                {
+                  "type": "all-in",
+                  "amount": 98
+                }
+              ]
+            }
+          },
+          "envelopeVersion": 1
+        },
+        {
+          "event": {
+            "id": "01K7X9HF9QCVCCQACVW1V8GRTJ",
+            "actor": "alice",
+            "action": {
+              "type": "call",
+              "amount": 94,
+              "isAllIn": false
+            },
+            "legalOptions": [
+              {
+                "type": "fold"
+              },
+              {
+                "type": "call",
+                "amount": 94
+              },
+              {
+                "type": "all-in",
+                "amount": 99
+              }
+            ],
+            "stackBefore": 95,
+            "stackAfter": 1,
+            "contribution": 94,
+            "timestamp": 1760845937975,
+            "metadata": {
+              "engineVersion": "engine.v0.phase3",
+              "availableActionsAtDecision": [
+                {
+                  "type": "fold"
+                },
+                {
+                  "type": "call",
+                  "amount": 94
+                },
+                {
+                  "type": "all-in",
+                  "amount": 99
+                }
+              ]
+            }
+          },
+          "envelopeVersion": 1
+        }
+      ]
+    },
+    "decision": {
+      "handNumber": 1,
+      "actor": "alice",
+      "handStage": "flop",
+      "potSize": 199,
+      "effectiveStack": 0,
+      "playersLeftToAct": [
+        "alice"
+      ],
+      "availableActions": []
+    },
+    "stepsApplied": 0
+  }
+}

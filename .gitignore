@@ -1,0 +1,13 @@
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+.turbo/
+.vite/
+*.log
+.DS_Store
+.idea/
+.vscode/
+.env
+.env.*
+examples/playground/dist/
